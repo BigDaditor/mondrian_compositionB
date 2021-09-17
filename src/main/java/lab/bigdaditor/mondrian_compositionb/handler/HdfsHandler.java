@@ -12,7 +12,7 @@ public class HdfsHandler {
         Configuration configuration = new Configuration();
         Path path = new Path("data");
         configuration.set("fs.file.impl", org.apache.hadoop.fs.LocalFileSystem.class.getName());
-        FileSystem fileSystem = FileSystem.get(URI.create("hdfs://192.168.29.184:9000/"), configuration);
+        FileSystem fileSystem = FileSystem.get(URI.create("hdfs://localhost:9000/"), configuration);
         fileSystem.mkdirs(path);
     }
 }

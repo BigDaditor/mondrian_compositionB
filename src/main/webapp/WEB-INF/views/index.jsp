@@ -17,7 +17,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-    var client = new Paho.MQTT.Client("192.168.29.184", 9001, "bigdaditor123");
+/*    var client = new Paho.MQTT.Client("192.168.29.184", 9001, "bigdaditor123");
     client.onConnectionLost = onConnectionLost;
     client.onMessageArrived = onMessageArrived;
 
@@ -45,6 +45,6 @@
     $("#send").click(function () {
         let content = $("#content").val();
         client.send(content);
-    });
+    });*/
 </script>
 </html>

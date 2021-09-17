@@ -9,7 +9,7 @@ public class Application {
 
     public static void main(String[] args) throws Exception{
         HdfsHandler hdfsHandler = new HdfsHandler();
-        hdfsHandler.createDirectory();
+        /*hdfsHandler.createDirectory();*/
         SpringApplication.run(Application.class, args);
     }
 
